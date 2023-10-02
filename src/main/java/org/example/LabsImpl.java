@@ -52,17 +52,15 @@ public class LabsImpl implements Labs {
     public void labFour() {
         CalculationFileOperations textFileOperations = new CalculationTextFileUtil();
         CalculationFileOperations binaryFileOperations = new CalculationBinaryFileUtil();
-        Calculation calc1 = new Calculation(1, 2);
+        Calculation calc1 = new Calculation(1, 2, true);
         Calculation calc2 = new Calculation(1, 3);
 
-        calc1.setShouldSimplify(true);
-
         calc1.add(calc2);
-        calc1 = new Calculation(1, 2);
+        calc1.setCalculation(1, 2);
         calc1.subtract(calc2);
-        calc1 = new Calculation(1, 2);
+        calc1.setCalculation(1, 2);
         calc1.multiply(calc2);
-        calc1 = new Calculation(1, 2);
+        calc1.setCalculation(1, 2);
         calc1.divide(calc2);
 
         String textFileName = "calculation.txt";

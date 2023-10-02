@@ -53,7 +53,7 @@ public class Calculation {
         this.shouldSimplify = shouldSimplify;
     }
 
-    private void setCalculation(int numerator, int denominator) {
+    public void setCalculation(int numerator, int denominator) {
         if (denominator == 0) {
             throw new IllegalArgumentException("Знаменатель не может быть равен нулю.");
         }
